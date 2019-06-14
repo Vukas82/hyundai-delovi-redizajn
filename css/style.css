@@ -1,0 +1,4462 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*
+ * Ime fajla		: style.css
+ *
+ * Fajl kreirao		: Nenad Simic - shone78@gmail.com
+ * Datum kreiranja	: 6.10.2014
+ * Upotreba fajla	: http://www.hitauto.rs/
+ * Verzija 			: 1.00
+ *
+ */
+
+
+/*
+zuta: #FFCB04
+siva: #1d1d1d
+tamnosiva/crna: #171717
+*/
+
+
+/* RENAULT FONT */
+
+/* @font-face {
+    font-family: 'RenaultLife';
+    src: url('/fonts/RenaultLife.eot?#iefix') format('embedded-opentype'), url('/fonts/RenaultLife.woff') format('woff'), url('/fonts/RenaultLife.ttf') format('truetype'), url('/fonts/RenaultLife.svg#RenaultLife') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RenaultLife-Bold';
+    src: url('/fonts/RenaultLife-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/RenaultLife-Bold.woff') format('woff'), url('/fonts/RenaultLife-Bold.ttf') format('truetype'), url('/fonts/RenaultLife-Bold.svg#RenaultLife-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RenaultLife-Light';
+    src: url('/fonts/RenaultLife-Light.eot?#iefix') format('embedded-opentype'), url('/fonts/RenaultLife-Light.woff') format('woff'), url('/fonts/RenaultLife-Light.ttf') format('truetype'), url('/fonts/RenaultLife-Light.svg#RenaultLife-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+
+/* RENAULT FONT */
+
+@viewport {
+    zoom: 1.0;
+    width: device-width;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+/* #204782 palva boja sa logoa */
+body {
+    /* font-family: 'Open Sans', sans-serif; font-weight:300; */
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #1d1d1d;
+    background-color: #fff;
+    /* font-family: 'RenaultLife'; */
+    font-weight: 400;
+}
+
+a {
+    transition: .5s ease-in;
+    text-decoration: none;
+    color: #171717;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+::selection {
+    /* background: #FFCB04; */
+    background: rgb(1, 18, 168);
+    color: #171717;
+}
+
+/* #header>div>nav>ul>li:nth-child(4)>div::selection {
+    background: #00853e !important;
+} */
+
+/* HEADER */
+
+header,
+#header {
+    position: relative;
+    width: 100%;
+    z-index: 50;
+    background-color: #204782;
+    box-shadow: 0px 10px 10px -7px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+#header {
+    border-top: 1px solid #e7e7e7;
+    background-color: #c41230 !important;
+    height: 10px;
+}
+
+/* @media (max-width: 767px) {
+    #header {
+        height: 163px;
+    }
+
+    .unutrasnji {
+        display: none !important;
+    }
+} */
+
+
+.copyright {
+    display: block;
+}
+
+header h1 {
+    /* color: #171717; */
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 0;
+    font-weight: 100;
+}
+
+#header {
+    background-color: #fff;
+    color: #fff !important;
+}
+
+#header a {
+    color: #FFF;
+    /* color: #c41230; */
+}
+
+@media(max-width: 767px) {
+    #header a {
+        /* color: #FFF; */
+        color: #c41230;
+    }
+}
+
+nav {
+    display: relative;
+}
+
+nav ul {
+    display: absolute;
+    right: -200px;
+}
+
+#header>div>nav>ul>li>ul>li>a {
+    color: black;
+}
+
+#header>div>nav>ul>li>ul>li>a:hover {
+    color: white;
+}
+
+#header>div>nav>ul>li.regular-dropdown>ul>li a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+#header>div>nav>ul>li.regular-dropdown>ul>li a:hover {
+    color: white;
+}
+
+#header>div>nav>ul>li:nth-child(4)>div {
+    background-color: #FFF;
+}
+
+/* .logo-text { color: #171717; text-transform:uppercase; font-family: 'RenaultLife'; font-size: 26px; padding:16px 0; } */
+
+.logo-text {
+    color: #171717;
+    text-transform: uppercase;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    padding: 0 0;
+    height: 54px;
+    width: 170px;
+}
+
+
+.logo-text-mobile {
+    width: 100%;
+}
+
+.logo-text-desktop {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    /* margin-left: 30%;
+    transform: translateX(-50%); */
+}
+
+.logo-text-desktop a {
+    position: relative !important;
+}
+
+.logo {
+    text-align: right;
+    padding: 4px 0 0;
+}
+
+.logo>div {
+    width: 54px;
+    height: 56px;
+    display: inline-block;
+    margin-left: 4px;
+}
+
+.logo>div:hover {
+    opacity: 0.77;
+}
+
+.logo .renault-logo {
+    background: url(/images/hyundai-logotip-btn.png) no-repeat;
+}
+
+.logo .dacia-logo {
+    background: url(/images/kia-logotip-btn.png) no-repeat;
+}
+
+.logo .nissan-logo span {
+    /* background: url(/images/hyundai-kia-kontakt-lupa.svg) no-repeat; */
+    /* vertical-align: middle; */
+    /* display: flex; */
+    /* align-content: center;
+    align-items: center;
+    justify-content: center; */
+
+    width: 35px;
+    height: 35px;
+
+}
+
+.nissan-logo span img {
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.logo .mobil-logo {
+    background-size: contain !important;
+}
+
+.header-logos {}
+
+@media(min-width:768px) {
+    .header-logos {
+        display: none;
+    }
+
+    .logo {
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translateY(100%);
+    }
+
+    .logo+nav:not(.fiksni) {
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        /* promena sa 100% */
+        width: 100%;
+        padding: 6px 0;
+    }
+
+    .logo+nav {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .logo+nav.fiksni {
+        text-align: center;
+    }
+
+    .logo+nav>ul {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media(min-width:691px) {
+    .logo-text-mobile {
+        display: none !important;
+    }
+}
+
+@media(max-width:690px) {
+    .logo-text-desktop {
+        display: none !important;
+    }
+}
+
+header .handle {
+    display: none;
+}
+
+header nav>li:first-child {
+    border-left: 1px solid #e7e7e7;
+}
+
+.modeli-menu>ul>li>h2>a {
+    background-color: #fff;
+    width: 100%;
+}
+
+header nav li,
+.modeli-menu li {
+    float: left;
+    /* border-right: 1px solid #e7e7e7; */
+    position: relative;
+    margin: 0 20px;
+    text-align: center;
+}
+
+/* #header>div>nav>ul>li:nth-child(7) {
+    margin-left: 100px;
+    position: absolute;
+    right: -66px;
+    top: 6px;
+} */
+
+#header>div>nav>ul>li:nth-child(7)>h2 {
+    width: 154px;
+}
+
+#header>div>nav>ul>li:nth-child(7)>h2>a {
+    text-align: right;
+}
+
+/* #header>div>nav>ul>li:nth-child(2)>ul>li:nth-child(1) header nav li:nth-child(1)>ul>li:nth-child(1) {
+    margin: 0 !important;
+} */
+
+#header>div>nav>ul>li:nth-child(2)>ul>li:nth-child(1) {
+    margin: 0;
+}
+
+#header>div>nav>ul>li:nth-child(2)>ul>li:nth-child(2) {
+    margin: 0;
+}
+
+#header>div>nav>ul>li:nth-child(2)>ul>li:nth-child(3) {
+    margin: 0;
+}
+
+/* kia lista */
+#header>div>nav>ul>li:nth-child(3)>ul>li:nth-child(1) {
+    margin: 0;
+}
+
+#header>div>nav>ul>li:nth-child(3)>ul>li:nth-child(2) {
+    margin: 0;
+}
+
+#header>div>nav>ul>li:nth-child(3)>ul>li:nth-child(3) {
+    margin: 0;
+}
+
+/* kontakt lista */
+#header>div>nav>ul>li.regular-dropdown>ul>li:nth-child(1) {
+    margin: 0;
+}
+
+#header>div>nav>ul>li.regular-dropdown>ul>li:nth-child(2) {
+    margin: 0;
+}
+
+/* header nav li:nth-child(1)>ul>li:nth-child(2) { */
+/* margin: 0 !important;
+}
+
+header nav li:nth-child(1)>ul>li:nth-child(3) {
+    margin: 0 !important;
+} */
+
+/* 
+header nav li:nth-child(2) {
+    margin: 0;
+}
+
+header nav li:nth-child(3) {
+    margin: 0;
+} */
+
+.modeli-menu li {
+    width: 100%;
+}
+
+header nav li a,
+.modeli-menu li a {
+    line-height: 51px;
+    display: block;
+    padding: 0 10px;
+    text-transform: uppercase;
+    /* font-family: 'HelveticaLight';*/
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    /*font-size: 15px;*/
+    font-size: 13px;
+    color: #1d1d1d;
+}
+
+/* header nav li a,
+.modeli-menu li a span {
+    color: green;
+} */
+
+header nav li a:hover,
+.modeli-menu li a:hover {
+    text-decoration: none;
+    /* background-color: #171717; */
+    background-color: #204782;
+    /* color: #FFCB04; */
+    color: #fff !important;
+    /* border: 1px solid #fff; */
+}
+
+header nav li:nth-child(4) a:hover,
+.modeli-menu li:nth-child(4) a:hover {
+    background-color: #FFF !important;
+}
+
+header nav ul ul,
+.modeli-menu ul ul {
+    position: absolute;
+    top: 51px;
+    left: 0px;
+    width: 300px;
+    background-color: #fff;
+    display: none;
+}
+
+.modeli-menu ul ul {
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+header nav>ul>li>ul {
+    border: 1px solid #e7e7e7;
+    top: 61px;
+}
+
+.modeli-menu>ul>li>ul {
+    border: 1px solid #e7e7e7;
+}
+
+header nav>ul>li>ul:before {
+    content: '';
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    top: -13px;
+    left: 0px;
+    background: url(/images/nav-arrow-1.png);
+    z-index: 9;
+}
+
+header nav ul ul.menu-modeli,
+.modeli-menu ul ul.menu-modeli {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    background-color: #f7f7f7;
+}
+
+.menu-modeli:before {
+    content: '';
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    top: -13px;
+    left: 0px;
+    background: url(/images/nav-arrow-1.5.png);
+    z-index: 9;
+}
+
+.menu-model-naziv {
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.menu-slika-link {
+    padding: 0px !important;
+    opacity: 0.85;
+    background-color: #e3e3e3 !important;
+    padding-top: 10px !important;
+    display: block;
+    position: relative;
+}
+
+.menu-slika-link:before {
+    content: '';
+    width: 100%;
+    height: 14px;
+    position: absolute;
+    top: -13px;
+    left: 0px;
+    background: url(/images/nav-arrow-2.png);
+    z-index: 9;
+}
+
+.menu-slika-link:hover {
+    opacity: 1;
+    background-color: #e3e3e3 !important;
+}
+
+.menu-slika-link img {
+    width: 70% !important;
+    display: block;
+    margin: 0px auto 0;
+}
+
+.menu-slika-link span {
+    color: #1d1d1d;
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    height: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.menu-slika-link:hover span {
+    color: #FFCB04;
+}
+
+header nav ul li:hover ul {
+    display: block;
+}
+
+header nav ul ul li,
+.modeli-menu ul ul li {
+    float: none;
+    border: none;
+    border-top: 1px solid #e7e7e7;
+    position: relative;
+}
+
+header nav>ul>li>ul>li>div>ul>li,
+.modeli-menu>ul>li>ul>li>div>ul>li {
+    border: none;
+}
+
+header nav>ul>li>ul>li>div>ul>li>a,
+.modeli-menu>ul>li>ul>li>div>ul>li>a:first-child {
+    border-top: 1px solid #E7E7E7;
+    margin: 0 10px;
+}
+
+header nav ul ul li a,
+.modeli-menu ulvul li a {
+    padding-left: 5px;
+    text-transform: none;
+}
+
+header nav>ul>li>ul>li>a,
+.modeli-menu>ul>li>ul>li>a {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+a.menuslide {
+    position: absolute;
+    width: 17px;
+    height: 19px;
+    padding: 0px;
+    right: 18px;
+    top: 17px;
+    background: url(/images/hit-auto-plus-btn.png) no-repeat;
+    border: none;
+}
+
+.modeli-menu a.menuslide {
+    background-position: 2px 0px;
+}
+
+/* #header > div > nav > ul > li:nth-child(1) > ul > li:nth-child(1) */
+header nav ul ul li a:hover,
+.modeli-menu ul ul li a:hover {
+    /* background-color: #FFCB04; */
+    background-color: #c41230;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+a.menuslide:hover {
+    background-color: #fff;
+}
+
+header nav ul ul li a span,
+.modeli-menu>ul>li>ul>li>a>span {
+    float: left;
+    display: block;
+    width: 80px;
+    height: 51px;
+    margin-right: 5px;
+}
+
+/* #header > div > nav > ul > li.regular-dropdown > ul > li:nth-child(2) > h2 > a > span */
+
+#header>div>nav>ul>li.regular-dropdown>ul>li:nth-child(2)>h2>a>span {
+    /* background: url(/images/new/pin.svg) */
+    background: url(/images/new/mobile.svg);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+#header>div>nav>ul>li.regular-dropdown>ul>li:nth-child(2)>h2>a:hover span {
+    filter: invert(1)
+}
+
+#header>div>nav>ul>li:nth-child(2)>ul>li:nth-child(4) {
+    margin-left: 0px;
+}
+
+.modeli-menu>ul>li>ul>li>a>span {
+    width: 0px;
+}
+
+ul ul li a.podputnicka span {
+    background: url(/images/hyundai-kia-delovi-klip.svg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    /* filter: invert(1); */
+}
+
+ul ul li a.podputnicka:hover span {
+    filter: invert(1)
+}
+
+ul ul li a.podlaka span {
+    background: url(/images/hyundai-kia-delovi-limarija.svg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+ul ul li a.podlaka:hover span {
+    filter: invert(1)
+}
+
+ul ul li a.podspecijalna span {
+    background: url(/images/hyundai-kia-delovi-gume.svg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+ul ul li a.podspecijalna:hover span {
+    filter: invert(1)
+}
+
+
+/* #header>div>nav>ul>li:nth-child(1)>h2>a {
+    background: url(/images/slider/loading-gears-animation-9.gif);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+} */
+
+/* search */
+
+.search-box {
+    position: relative;
+}
+
+.search {
+    /* position: absolute; */
+    bottom: 8px;
+    right: 0px;
+    z-index: 55;
+}
+
+.search div {
+    width: 100%;
+}
+
+.search-head {
+    position: absolute;
+    top: 100px;
+    right: 50%;
+}
+
+/* .search .search-head { height:62px; width:47px; cursor: pointer; background: url('/images/hit-auto-pretraga-lupa-btn.png') center no-repeat; transition: background .2s ease-in;   margin-top: 5px; } */
+
+.search .search-head {
+    height: 54px;
+    width: 44px;
+    cursor: pointer;
+    background: url('/images/hyundai-kia-kontakt-lupa.svg') center no-repeat;
+    background-size: 28px;
+    background-position: center center;
+    transition: background .2s ease-in;
+    margin-top: 5px;
+    /* filter: invert(1) */
+}
+
+.lupa span img {
+    /* height: 30px; */
+    width: 20px;
+    /* align-items: flex-start; */
+    /* flex: 2 5 12rem; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+.search__2 {
+    height: 54px;
+    width: 44px;
+    cursor: pointer;
+    background: url('/images/hyundai-kia-kontakt-korpa.svg') center no-repeat;
+    background-size: 38px;
+    background-position: center center;
+    transition: background .2s ease-in;
+    /* margin-top: 5px; */
+    /* filter: invert(1); */
+    /* float: right; */
+    transition: 0.5s ease-in-out;
+}
+
+.search__2:hover {
+    transform: scale(1.3)
+}
+
+.search .search-head:hover {
+    opacity: 0.77;
+}
+
+
+/*.search .searchh-head:hover { background:url(/images/web-dizajn-beograd-search-on.png) right center no-repeat; }
+.search .searchh-head.active { background:url(/images/web-dizajn-beograd-close-off.png) right center no-repeat; border:0; }
+.search .searchh-head.active:hover { background:url(/images/web-dizajn-beograd-close.png) right center no-repeat; border:0; }*/
+
+.search .search-content {
+    background-color: #dbd9d9;
+    /* display: none; */
+    padding: 0px;
+    width: 0px;
+    /* position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 62px; */
+    width: 800px !important;
+    /* display: flex;
+    flex-direction: row; */
+    /* flex-direction: column-reverse; */
+    position: relative;
+    margin-left: -50px;
+
+}
+
+@media(max-width:1200px) {
+    .search .search-content {
+        width: 500px !important;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:900px) {
+    .search .search-content {
+        width: 400px !important;
+        /* margin-left: 0px; */
+    }
+}
+
+.search .search-content {
+    height: 40px;
+}
+
+.search input {
+    border: 1px solid #e7e7e7;
+    /* background-color: #dbd9d9; */
+    /* background-color: #c41230; */
+    border: 1px solid 171717;
+    color: #171717;
+    display: block;
+    /* position: absolute;
+    right: 45px;
+    bottom: -110px; */
+}
+
+.white__space {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media(max-width:768px) {
+    .white__space {
+        display: none;
+    }
+}
+
+aside {
+    /* background: url(/images/slider/34155286-chequered-race-flag.jpg); */
+    /* background: url(/images/pushing-3839062_1280.png) -300px 90px no-repeat; */
+    /* background: url(/images/4657986.jpg); */
+    background: url(/images/slider/RS4301_125558951.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    width: 30vw;
+    height: 60vh;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    right: -30vw;
+    /* float: right; */
+}
+
+/* #header>div>nav>ul {
+    width: 100vw
+} */
+
+/* SLIDER */
+
+.slider-wrap {
+    position: relative;
+    z-index: 30;
+    position: relative;
+    margin-bottom: 10px;
+    /* float: left; */
+    /* width: 70vw; */
+}
+
+.slider-bg {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background-color: #171717;
+    opacity: 0.77;
+    height: 55px;
+    z-index: 30;
+    transform: translateY(100%);
+    /* width: 70vw; */
+
+}
+
+.unutrasnji {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    /* background: url('/images/slider/popusti-auto-delovi-za-servise.jpg'); */
+    background-color: white;
+    border-radius: 3px;
+    opacity: .3;
+    width: 500px;
+    height: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: red;
+    padding: 2rem;
+}
+
+.unutrasnji h4 {
+    font-size: 2rem;
+    /* color: white;
+    z-index: 30000; */
+}
+
+#content-slider-1 {
+    /* width: 70vw; */
+}
+
+#content-slider-1 .rsArrow,
+#content-slider-2 .rsArrow {
+    width: 74px;
+    height: 73px;
+    bottom: 45%;
+    right: 10px;
+    opacity: .5;
+}
+
+#content-slider-1:hover .rsArrow,
+#content-slider-2:hover .rsArrow {
+    display: block !important;
+}
+
+#content-slider-1 .rsArrowLeft,
+#content-slider-2 .rsArrowLeft {
+    /* background: url(/images/hit-auto-strelice-slider.jpg) 10px 0 no-repeat; */
+    /* background: url(/images/new/play-button.svg); */
+    background: url(/images/new/up-chevron.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* filter: invert(1); */
+    /* width: 30px; */
+    right: auto;
+    left: 10px;
+    transform: rotate(-90deg);
+
+}
+
+#content-slider-1 .rsArrowRight,
+#content-slider-2 .rsArrowRight {
+    /* background: url(/images/hit-auto-strelice-slider.jpg) -74px 0px no-repeat; */
+    /* background: url(/images/new/play-button.svg); */
+    background: url(/images/new/up-chevron.svg);
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+
+    /* filter: invert(1); */
+
+
+}
+
+#content-slider-1 .rsArrowLeft:hover,
+#content-slider-2 .rsArrowLeft:hover {
+    opacity: 0.77;
+}
+
+#content-slider-1 .rsArrowRight:hover,
+#content-slider-2 .rsArrowRight:hover {
+    opacity: 0.77;
+}
+
+#content-slider-1 .rsArrowIcn,
+#content-slider-2 .rsArrowIcn {
+    display: none;
+}
+
+#content-slider-1 .rsNav {
+    bottom: 0;
+    padding-top: 0px;
+    /* position:absolute;*/
+    z-index: 35;
+    margin-bottom: 15px;
+}
+
+#content-slider-1 .rsNavItem {
+    height: 55px;
+}
+
+#content-slider-1 .rsNavItem,
+#content-slider-1 .rsNavItem.rsNavSelected {
+    background: none !important;
+    border: 0px !important;
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px 0px;
+}
+
+#content-slider-1 .rsTmb {
+    /* color: #FFCB04 !important; */
+    color: #ffffff !important;
+    font-size: 15px !important;
+    /*font-family: 'HelveticaLight'; font-weight:300;*/
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    line-height: 55px;
+    padding: 0 35px 0 25px;
+    position: relative;
+}
+
+#content-slider-1 .rsTmb span {
+    background: url(/images/hit-auto-strelica-slider-btn.png) -18px 0px no-repeat;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    width: 18px;
+    height: 25px;
+}
+
+#content-slider-1 .rsNavItem.rsNavSelected .rsTmb,
+#content-slider-1 .rsNavItem:hover .rsTmb {
+    /* background-color: #FFCB04 !important; */
+    background-color: #204782 !important;
+    /* color: #171717 !important; */
+    color: #ffffff !important;
+}
+
+#content-slider-1 .blockHeadline {
+    background-color: #fff;
+    width: 360px;
+    height: 180px;
+    position: absolute;
+    top: auto;
+    bottom: 110px;
+    right: 50%;
+    margin-right: -540px;
+    left: auto;
+    margin-left: inherit;
+    font-size: 21px;
+    color: #171717;
+    padding: 10px 15px;
+    /*font-weight:300;*/
+    opacity: 0.77 !important;
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+#content-slider-1 .slider-txt {
+    color: #1d1d1d;
+    font-size: 15px;
+    position: absolute;
+    top: auto;
+    bottom: 130px;
+    right: 50%;
+    margin-right: -540px;
+    left: auto;
+    margin-left: inherit;
+    padding: 5px 15px;
+    height: 115px;
+    overflow: hidden;
+    width: 360px;
+    height: 95px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+#content-slider-1 .slider-txt p {
+    width: 340px;
+    text-align: justify;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#content-slider-1 .infoBlock {
+    width: 130px;
+    height: 40px;
+    background-color: #171717;
+    text-align: center;
+    position: absolute;
+    bottom: 90px;
+    top: auto;
+    right: 50%;
+    margin-right: -520px;
+    left: auto;
+    margin-left: inherit;
+}
+
+#content-slider-1 .infoBlock a {
+    display: block;
+    line-height: 40px;
+    color: #FFCB04;
+    /* color: #204782; */
+    /* font-family: 'RenaultLife-Light'; */
+    font-family: 'Lato', sans-serif;
+    /*font-weight:300;*/
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#content-slider-1 .infoBlock:hover {
+    background-color: #FFCB04;
+}
+
+#content-slider-1 .infoBlock:hover a {
+    color: #171717;
+    text-decoration: none;
+}
+
+
+/* CONTENT */
+
+/* #content .title { */
+.title {
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 31px;
+    margin: 0 auto;
+    color: #171717;
+    /* color: #f70793; */
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+    /* position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%) */
+}
+
+/* #content .sub-title { */
+.sub-title {
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 25px;
+    text-transform: uppercase;
+    padding-top: 0px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* .cot__two {
+    background-color: #171717;
+    color: #fff;
+    padding: 40px;
+} */
+
+.container p {
+    text-align: justify;
+    line-height: 1.4
+}
+
+/* .container {
+    background: #000;
+} */
+
+.content-box {
+    margin-bottom: 40px;
+}
+
+.content-box .content-img {
+    padding-right: 10px;
+}
+
+.content-box .content-img img {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+}
+
+.content-box .content-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-weight: 300;
+    padding: 3rem;
+}
+
+.content-img {
+    padding: 3rem;
+
+}
+
+.content-box .content-text p .keywords {
+    /* color: #171717; */
+    color: #204782;
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+
+.prodaja-vozila-box {
+    width: 60%;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+    min-height: 327px;
+}
+
+.prodaja-vozila-img img {
+    width: 100%;
+    border-bottom: 1px solid #e7e7e7;
+    height: 360px;
+}
+
+.prodaja-vozila-img a {
+    display: block;
+    position: relative;
+}
+
+.prodaja-vozila-img a>span {
+    display: none;
+    width: 190px;
+    height: 45px;
+    background: #2047 url(/images/hit-auto-lupa-btn.png) left center no-repeat;
+    color: #fff;
+    text-transform: uppercase;
+    padding-left: 55px;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+    top: 50%;
+    margin-top: -22px;
+    line-height: 45px;
+}
+
+.prodaja-vozila-img a i {
+    display: block;
+    opacity: 0;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease-in;
+    background-color: #204782
+        /* background-color: #c41230 */
+}
+
+
+
+.prodaja-vozila-img a:hover i {
+    opacity: 0.5;
+}
+
+.prodaja-vozila-img a:hover>span {
+    display: block;
+}
+
+.prodaja-vozila-img a b {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+}
+
+.prodaja-vozila-img a>b>span {
+    display: block;
+    font-size: 21px;
+}
+
+.prodaja-vozila-dacia {
+    /* margin: 0 auto; */
+    width: 90%;
+    margin-left: 10%;
+}
+
+.prodaja-vozila-nissan {
+    margin-left: 7px;
+}
+
+.prodaja-vozila-dacia .prodaja-vozila-img a>span {
+    background: #00369e url(/images/hit-auto-lupa-btn.png) left center no-repeat;
+}
+
+.prodaja-vozila-nissan .prodaja-vozila-img a>span {
+    background: #c71444 url(/images/hit-auto-lupa-btn.png) left center no-repeat;
+}
+
+.prodaja-vozila-text {
+    padding: 0 15px;
+}
+
+.prodaja-vozila-title a {
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 28px;
+}
+
+.prodaja-vozila-renault .prodaja-vozila-title a:hover {
+    text-decoration: none;
+    color: #FFCB04;
+}
+
+.prodaja-vozila-dacia .prodaja-vozila-title a:hover {
+    text-decoration: none;
+    color: #00369e;
+}
+
+.prodaja-vozila-nissan .prodaja-vozila-title a:hover {
+    text-decoration: none;
+    color: #c71444;
+}
+
+.prodaja-vozila-text p {
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.polovna-vozila .prodaja-vozila-text p {
+    min-height: 40px;
+}
+
+.polovna-vozila .cena {
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 24px;
+    text-align: right;
+}
+
+.polovna-vozila .prodaja-vozila-img a>span {
+    background: #171717 url(/images/hit-auto-lupa-btn.png) left center no-repeat;
+    color: #fff;
+    padding-left: 65px;
+}
+
+#popusti-ponude-wrap {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+.jb-title {
+    /* font-family: 'RenaultLife-Light'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 7px solid #171717;
+    color: #171717;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px !important;
+}
+
+.jb-naslov {
+    font-size: 15px;
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+
+.JB_Slide p {
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 20px !important;
+    padding-right: 10px !important;
+}
+
+.jb-trajanje span {
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.jb-detaljno a {
+    display: inline-block;
+    background-color: #171717;
+    color: #FFCB04;
+    /* font-family: 'RenaultLife-Light'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 45px;
+    padding: 0 50px !important;
+    text-transform: uppercase;
+}
+
+.jb-detaljno a:hover {
+    background-color: #FFCB04;
+    color: #171717;
+    text-decoration: none;
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+
+.jb-img {
+    padding-top: 35px !important;
+}
+
+.jb-img img {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    display: block;
+}
+
+.jb-img a {
+    display: block;
+    position: relative;
+}
+
+.jb-img a:hover i {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e3e3e3;
+    transition: .5s ease-in;
+}
+
+.jb-img a:hover i {
+    opacity: 0.8;
+}
+
+.jb-img a span {
+    display: none;
+    width: 52px;
+    height: 39px;
+    background: #FFCB04 url(/images/hit-auto-slika-btn.png) left center no-repeat;
+    position: absolute;
+    left: 50%;
+    margin-left: -26px;
+    top: 50%;
+    margin-top: -19px;
+}
+
+.jb-img a:hover span {
+    display: block;
+}
+
+hr {
+    background-color: #e7e7e7;
+    clear: both;
+    margin: 10px 0;
+    border: 0;
+    height: 1px;
+}
+
+#vozila {
+    padding-bottom: 30px;
+}
+
+#vozila .black {
+    background-color: #171717;
+}
+
+#vozila .black .vozila-h a {
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background: url(/images/hit-auto-strelica-padajuci-meni.png) right 55px top 4px no-repeat;
+}
+
+#vozila .black .vozila-h a:hover {
+    color: #FFCB04;
+    text-decoration: none;
+}
+
+#vozila .black i {
+    position: absolute;
+    background: url(/images/hit-auto-modeli-automobila-btn.png) no-repeat;
+    width: 50px;
+    height: 29px;
+    bottom: -23px;
+    left: 50%;
+    margin-left: -25px;
+}
+
+.vozila-c {
+    background-color: #e5e5e5;
+    display: none;
+    padding-bottom: 10px;
+}
+
+.vozila-c ul {
+    padding: 20px 8px 0px;
+}
+
+.vozila-c li {
+    text-transform: uppercase;
+    font-style: italic;
+    /* font-family: 'RenaultLife-Bold'; */
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    color: #1d1d1d;
+}
+
+.vozila-c li a {
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
+    background: url(/images/hit-auto-strelica-nabrajanje-btn.png) 0 0px no-repeat;
+    padding-left: 15px;
+    color: #1d1d1d;
+    display: block;
+    line-height: 18px;
+}
+
+.vozila-c li a:hover {
+    color: #171717;
+    text-decoration: none;
+}
+
+
+/* MODEL */
+
+.vozila-info {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: none;
+}
+
+.vozila-info a {
+    display: block;
+    width: 250px;
+    line-height: 54px;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    padding: 0 15px;
+    background: #f0f0ef url(/images/hit-auto-strelica-vozila-info.png) right 10px center no-repeat;
+}
+
+.vozila-info a:hover {
+    background: #f0f0ef url(/images/hit-auto-strelica-vozila-info.png) right 10px bottom 15px no-repeat;
+    letter-spacing: 0.5px;
+}
+
+.model-img {
+    padding-right: 15px;
+}
+
+.model-content {
+    padding-left: 15px;
+}
+
+.model-content .tab-content .tab {
+    min-height: 170px;
+    text-align: justify;
+    color: #a9aaab;
+    margin-bottom: 20px;
+}
+
+.model-content .tablink ul {}
+
+.model-content .tablink li {
+    width: 33.33333333333333%;
+    padding: 0 1px;
+    float: left;
+}
+
+.model-content .tablink li a {
+    display: block;
+    width: 100%;
+    min-height: 54px;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    background-color: #f0f0ef;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.model-content .tablink li.active a,
+.model-content .tablink li a:hover {
+    background-color: #FFCB04;
+}
+
+.model-content .tab-content {}
+
+.model-ostalo {
+    padding-top: 15px;
+    clear: both;
+}
+
+.model-ostalo>div {
+    padding: 0 1px;
+}
+
+.model-ostalo .modeli-pdf a {
+    margin-bottom: 1px;
+    display: block;
+    width: 100%;
+    min-height: 54px;
+    font-size: 15px;
+    line-height: 54px;
+    background-color: #FFCB04;
+    text-align: left;
+    color: #fff;
+    background: #FFCB04 url(/images/hit-auto-pdf-katalozi.png) left 10px center no-repeat;
+    padding-left: 50px;
+}
+
+.model-ostalo .modeli-pdf a:hover {
+    letter-spacing: 0.5px;
+}
+
+.model-ostalo a.servisne-usluge {
+    height: 165px;
+    display: block;
+    background: #e7e7e7 url(/images/hit-auto-servisne-usluge.png) center top 30px no-repeat;
+    padding-top: 110px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.model-ostalo a.servisne-usluge:hover {
+    letter-spacing: 0.5px;
+}
+
+.model-ostalo .model-linkovi {
+    background-color: #e7e7e7;
+    min-height: 165px;
+    padding: 3px 0;
+}
+
+.model-ostalo .model-linkovi a {
+    display: block;
+    padding: 3px 10px 3px;
+}
+
+.model-ostalo .model-linkovi a:hover {
+    background-color: #FFCB04;
+    color: #fff;
+}
+
+.model-img .fotorama__nav {
+    padding-top: 25px !important;
+}
+
+.model-img .fotorama__thumb-border {
+    border-color: #FFCB04 !important;
+}
+
+.auto-servis {
+    margin-top: 25px;
+}
+
+.auto-servis .tab-content .tab {
+    min-height: 170px;
+    text-align: justify;
+    color: #1d1d1d;
+    padding: 0 15px;
+}
+
+.auto-servis .tablink ul {}
+
+.auto-servis .tablink li {
+    width: 100%;
+    padding: 0 1px;
+    margin-bottom: 3px;
+}
+
+.auto-servis .tablink li a {
+    display: block;
+    width: 100%;
+    min-height: 54px;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    background-color: #f0f0ef;
+    text-align: left;
+    padding: 12px 15px 12px 25px;
+}
+
+.auto-servis .tablink li a:after {
+    width: 11px;
+    height: 19px;
+    content: '';
+    background: url('/images/auto-servis-arrows.png') 0px -19px no-repeat;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+.auto-servis .tablink li.active a:after,
+.auto-servis .tablink li a:hover:after {
+    width: 11px;
+    height: 19px;
+    content: '';
+    background: url('/images/auto-servis-arrows.png') 0px 0px no-repeat;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+.auto-servis .tablink li.active a,
+.auto-servis .tablink li a:hover {
+    background-color: #FFCB04;
+    color: #fff;
+}
+
+.auto-servis .tab-content {}
+
+.autoservis-naslov {
+    color: #171717;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.auto-servis a.detaljno,
+.ponuda a.detaljno {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #FFCB04;
+    color: #171717;
+    /* font-family: 'RenaultLife'; */
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    line-height: 45px;
+    padding: 0 50px !important;
+    text-transform: uppercase;
+    float: right;
+}
+
+.auto-servis a.detaljno:hover,
+.ponuda a.detaljno:hover {
+    background-color: #171717;
+    color: #FFCB04;
+    text-decoration: none;
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+}
+
+
+/* SLIDER MODELI VOZILA */
+
+.modeli-slider {
+    clear: both;
+}
+
+ul#modeli-slider li {
+    width: 309px !important;
+    height: 265px !important;
+    margin-right: 10px !important;
+    padding: 0px !important;
+    padding-right: 0px !important;
+}
+
+[data-carousel-name] {
+    display: block !important;
+}
+
+[data-carousel-control="wrapper"] {
+    max-width: 1190px !important;
+}
+
+[data-carousel-control="left"] {
+    position: absolute !important;
+    background: #fff url(/images/hit-auto-strelica-akcije-left.png) center no-repeat !important;
+    width: 50px !important;
+    height: 50px !important;
+    top: 40% !important;
+    opacity: 1 !important;
+    left: -75px !important;
+    text-indent: -99999px !important;
+}
+
+[data-carousel-control="right"] {
+    position: absolute !important;
+    background: #fff url(/images/hit-auto-strelica-akcije-right.png) center no-repeat !important;
+    width: 50px !important;
+    height: 50px !important;
+    top: 40% !important;
+    opacity: 1 !important;
+    right: -75px !important;
+    text-indent: -99999px !important;
+}
+
+[data-carousel-control="left"]:hover,
+[data-carousel-control="right"]:hover {
+    opacity: 0.77 !important;
+}
+
+.modeli-wrap {
+    width: 100%;
+    background-color: #e3e3e3;
+    padding: 10px 0;
+}
+
+.slider-model-naslov {
+    font-family: 'RenaultLife';
+    font-size: 20px;
+    color: #171717;
+    text-align: center !important;
+}
+
+.slider-model-cena {
+    color: #a9aaab;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center !important;
+}
+
+.slider-model-cena.akcija {
+    color: red;
+    font-weight: 700;
+}
+
+.slider-model-img {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.slider-model-img img {
+    display: block;
+    width: 100%;
+}
+
+@media(min-width:691px) {
+    .slider-model-img img {
+        height: 150px;
+        object-fit: contain;
+    }
+}
+
+.slider-model-pdfs {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    opacity: 0;
+    transition: .5s ease-in;
+}
+
+ul#modeli-slider li:hover .slider-model-pdfs {
+    opacity: 1;
+}
+
+.slider-model-pdf {
+    position: absolute;
+    left: 50%;
+    margin-left: -95px;
+}
+
+.pdf-katalog {
+    top: 5px;
+}
+
+.pdf-oprema {
+    top: 53px;
+}
+
+.pdf-cenovnik {
+    top: 102px;
+}
+
+.slider-model-pdf a {
+    display: block;
+    color: #fff;
+    background: #FFCB04 url(/images/hit-auto-pdf-katalozi.png) left 10px center no-repeat;
+    padding-left: 50px;
+    width: 190px;
+    line-height: 44px;
+    font-size: 15px;
+}
+
+.slider-model-bg {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    height: 100%;
+}
+
+.slider-model-link a {
+    display: block;
+    width: 190px;
+    margin: 0px auto;
+    line-height: 45px;
+    color: #FFCB04;
+    text-align: center;
+    background-color: #171717;
+}
+
+.slider-model-link a:hover {
+    letter-spacing: 0.5px;
+}
+
+.renault-vozila-slider-item .slider-model-pdf a {
+    background: #FFCB04 url(/images/hit-auto-pdf-katalozi.png) left 10px center no-repeat !important;
+}
+
+.dacia-vozila-slider-item .slider-model-pdf a {
+    background: #00369e url(/images/hit-auto-pdf-katalozi.png) left 10px center no-repeat !important;
+}
+
+.nissan-vozila-slider-item .slider-model-pdf a {
+    background: #c71444 url(/images/hit-auto-pdf-katalozi.png) left 10px center no-repeat !important;
+}
+
+
+/* KONTAKT */
+
+.contact-img {
+    width: 100%;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    border: 1px solid #eee;
+    color: #171717;
+    height: 48px;
+    margin-bottom: 30px;
+    padding: 3px 10px;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+#contact-form textarea {
+    height: 130px;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #171717;
+    color: #FFCB04;
+    font-size: 18px;
+    line-height: 40px;
+    width: 200px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#contact-form input[type="submit"]:hover {
+    background-color: #FFCB04;
+    color: #171717;
+}
+
+.contact-title {
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    font-size: 18px;
+    color: #171717;
+    padding-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-box {
+    min-height: 80px;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+
+.contact-address {
+    background: url(/images/hit-auto-lokacija.png) no-repeat;
+}
+
+.contact-email {
+    background: url(/images/hit-auto-e-mail.png) no-repeat;
+}
+
+.contact-hours {
+    background: url(/images/hit-auto-radno-vreme.png) no-repeat;
+    color: #00853e;
+}
+
+.contact-phone {
+    background: url(/images/hit-auto-broj-telefona.png) no-repeat;
+    min-height: 70px;
+}
+
+.contact-naslov {
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    font-size: 15px;
+    color: #171717;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.contact-hours {
+    color: #1d1d1d;
+}
+
+.contact-hours strong {
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.contact-hours p {
+    margin-bottom: 15px;
+}
+
+.contact-hours>div {
+    float: left;
+    line-height: 18px;
+}
+
+.contact-hours .first {
+    clear: both;
+    width: 50%;
+}
+
+.contact-hours .third {
+    width: 25%;
+    text-align: center;
+}
+
+.contact-hours .second {
+    width: 25%;
+    text-align: center;
+}
+
+.contact-hours .wht {
+    color: #171717;
+    padding-top: 5px;
+}
+
+.contact-hours .first.wht {
+    text-transform: uppercase;
+}
+
+.kontakt-sektor {
+    color: #000;
+}
+
+.kontakt-sektor-naziv {
+    text-transform: uppercase;
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.kontakt-ime {
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.kontakt-tip {
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    width: 60px;
+    display: inline-block;
+}
+
+.kontakt-podatak a {
+    color: #FFCB04;
+}
+
+.kontakt-podatak a:hover {
+    color: #1d1d1d;
+}
+
+.kontakt-sektor-naziv {
+    text-transform: uppercase;
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    margin-bottom: 0px;
+    color: #FFCB04;
+    padding-top: 15px;
+}
+
+.kontakt-sektor {
+    color: #000;
+    margin-bottom: 30px;
+    width: 280px;
+}
+
+
+/* .kontakt-sektor:nth-of-type(4n+5) { clear:both; } */
+
+
+/* MODAL */
+
+#maps-modal {
+    width: 670px;
+    min-height: 600px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#maps-modal .modal-body {
+    padding: 0;
+}
+
+#zakazite-modal {
+    width: 500px;
+    /* min-height:600px; */
+    min-height: 200px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+    top: 5% !important;
+}
+
+#zakazite-modal .modal-body {
+    padding: 5px;
+}
+
+#servis-modal {
+    width: 500px;
+    /* min-height:600px; */
+    min-height: 350px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#servis-modal .modal-body {
+    padding: 5px;
+}
+
+#registracija-modal {
+    width: 500px;
+    /* min-height:600px; */
+    min-height: 200px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#registracija-modal .modal-body {
+    padding: 5px;
+}
+
+#login-modal {
+    width: 460px;
+    height: 360px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.modal-head {
+    height: 100px;
+    background-color: #FFCB04;
+    position: relative;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+
+.modal-title {
+    color: #171717;
+    font-family: 'RenaultLife';
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 100px;
+    padding-left: 20px;
+}
+
+.modal-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.modal-body {
+    min-height: 200px;
+    padding: 15px 20px;
+}
+
+.modal-body form {
+    padding-top: 10px;
+}
+
+.modal-body input {
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    height: 52px;
+    width: 202px;
+    line-height: 52px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #4f4f4f;
+    font-weight: 300;
+}
+
+.modal-body input#UserName {
+    float: left;
+    background: url(/images/login-username.png) right no-repeat;
+    padding: 0 55px 0 10px;
+}
+
+.modal-body input#Password {
+    float: right;
+    background: url(/images/login-password.png) right no-repeat;
+    padding: 0 55px 0 10px;
+}
+
+.modal-body form a {
+    margin-top: 12px;
+    text-transform: uppercase;
+    color: #01264a;
+    display: block;
+}
+
+.modal-body form a:hover {
+    letter-spacing: 0.5px;
+}
+
+.modal-body form>a {
+    text-transform: none;
+}
+
+.modal-body input[type="submit"] {
+    margin-top: 12px;
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #01264a;
+    border-color: #01264a;
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    line-height: normal;
+}
+
+.slider-model #content-slider-1:hover .rsArrow {
+    display: none !important;
+}
+
+
+/* FOOTER */
+
+#footer {
+
+    display: none;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #FFCB04;
+    border-top: 1px solid #171717;
+    height: 50px;
+    z-index: 500;
+    padding-top: 100px;
+}
+
+#footer .container>div {
+    padding-left: 55px;
+    border-left: 1px solid #171717;
+}
+
+.f-registracija {
+    background: url(/images/hit-auto-ikonice-poklon-ikonica.gif) 5px 2px no-repeat;
+}
+
+.f-lokacija {
+    background: url(/images/hit-auto-ikonice-btn-new.png) -210px 2px no-repeat;
+}
+
+.f-voznja {
+    background: url(/images/hit-auto-ikonice-btn-new.png) -82px 2px no-repeat;
+}
+
+.f-chat {
+    background: url(/images/hit-auto-ikonice-btn-new.png) -124px 2px no-repeat;
+}
+
+#footer .container>div a {
+    background-color: #FFCB04;
+    display: block;
+    padding: 5px 0;
+}
+
+#footer .container>div a:hover {
+    letter-spacing: 0.5px;
+}
+
+.f-social {
+    padding-left: 0px !important;
+    height: 50px;
+}
+
+#footer .social {
+    padding-top: 8px;
+}
+
+#footer .social a {
+    display: block;
+    background: url(/images/facebook-twiteer-gplus-btn.png) no-repeat;
+    height: 35px;
+    width: 45px;
+    float: left;
+}
+
+.social__new {
+    /* background: blue; */
+    height: 50px;
+    width: 200px;
+    /* float: right; */
+    display: inline-block;
+    border-bottom: 1px solid white;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.social__new img {
+    /* background: #fff; */
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+}
+
+.social__new img:hover {
+    background: #fff;
+    height: 25px;
+    width: 25px;
+}
+
+.social__new ul {
+    list-style: none;
+    display: inline;
+    margin-right: 11px;
+}
+
+.social__new ul li {
+    text-decoration: none;
+    display: inline;
+    margin-right: 15px;
+    /* margin: 0px; */
+}
+
+#footer .social a.fb {
+    background-position: 5px -49px;
+}
+
+#footer .social a.fb:hover {
+    background-position: 5px -4px;
+}
+
+#footer .social a.gp {
+    background-position: -40px -49px;
+    border: 1px solid #171717;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 5px;
+    width: 55px;
+}
+
+#footer .social a.gp:hover {
+    background-position: -40px -4px;
+}
+
+#footer .social a.tw {
+    background-position: -85px -49px;
+}
+
+#footer .social a.tw:hover {
+    background-position: -85px -4px;
+}
+
+.opening-hours {
+    position: absolute;
+    right: 50%;
+    bottom: -60px;
+    transform: translateX(50%);
+}
+
+.oh-head {
+    background-color: #171717;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color: #c41230;
+    font-size: 18px;
+    width: 520px;
+    background: #171717 url(/images/hit-auto-ikonice-btn-new.png) -166px 4px no-repeat;
+    /* padding-left: 60px; */
+    /* text-align: center; */
+    border-top: 1px solid #fff;
+}
+
+@media(max-width:767px) {
+    .oh-head span {
+        display: none !important;
+    }
+
+    .design span {
+        float: left;
+    }
+}
+
+.oh-content {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #c41230;
+    position: absolute;
+    bottom: 51px;
+    background-color: #171717;
+    width: 520px;
+    padding: 5px 15px 10px;
+    /* text-align: center; */
+}
+
+.oh-content strong {
+    font-family: 'Lato';
+    font-weight: normal;
+    margin-top: 5px;
+    line-height: 20px;
+}
+
+.oh-content p {
+    margin-bottom: 15px;
+}
+
+.oh-content>div {
+    float: left;
+    line-height: 18px;
+}
+
+.oh-content .first {
+    clear: both;
+    width: 50%;
+}
+
+.oh-content .third {
+    width: 25%;
+    text-align: center;
+}
+
+.oh-content .second {
+    width: 25%;
+    text-align: center;
+}
+
+.oh-content .wht {
+    color: #fff;
+    padding-top: 5px;
+}
+
+.oh-content .first.wht {
+    text-transform: uppercase;
+}
+
+footer .design a,
+footer .copyright {
+    line-height: 45px;
+    /* color: #171717; */
+    color: #fff;
+    /* font-style:italic; font-family: 'RenaultLife-Bold'; */
+    font-weight: normal;
+}
+
+.design {
+    margin-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .design {
+        margin-top: 5px;
+    }
+
+    footer .copyright {
+        padding-top: 30px;
+        background-color: #171717;
+    }
+}
+
+footer h5 {
+    display: inline-block;
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+}
+
+footer .copyright {
+    text-align: right;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 7px;
+    text-decoration: none;
+    display: none;
+    width: 40px;
+    height: 40px;
+    /* background: url(/images/hit-auto-klizajuci-meni-btn.jpg) 0px 0px no-repeat; */
+    background: url(/images/new/right-arrow.svg);
+    background-color: #c41230;
+    z-index: 150;
+    transform: rotate(-90deg);
+    /* filter:invert(1); */
+}
+
+.back-to-top:hover {
+    opacity: 0.77;
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .logo-text {
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    .logo>div {
+        margin: 0 2px;
+    }
+
+    header nav>ul {
+        display: none;
+    }
+
+    .showing {
+        display: block;
+    }
+
+    header .handle {
+        display: block;
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+        font-family: 'RenaultLife';
+        color: #171717;
+        text-indent: 28px;
+        line-height: 40px;
+        cursor: pointer;
+    }
+
+    header .handle:before {
+        content: "";
+        position: absolute;
+        top: 13px;
+        left: 5px;
+        width: 20px;
+        height: 3px;
+        border-top: 7px double #171717;
+        border-bottom: 2px solid #171717;
+    }
+
+    header nav li {
+        float: none;
+        border: none !important;
+    }
+
+    header nav li a {
+        line-height: 40px;
+    }
+
+    .search {
+        right: 5px;
+    }
+
+    .search .search-head {
+        height: 40px;
+    }
+
+    .search .search-content {
+        right: 15px;
+        height: 43px;
+    }
+
+    .search .search-content.active {
+        width: 200px;
+        width: calc(100% - 80px);
+        position: relative;
+    }
+
+    .search input {
+        line-height: 35px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #content-slider-1 .rsArrow,
+    #content-slider-1:hover .rsArrow,
+    #content-slider-1 .rsNav,
+    .slider-bg,
+    #content-slider-1 .blockHeadline,
+    #content-slider-1 .slider-txt,
+    #content-slider-1 .infoBlock {
+        display: none !important;
+    }
+
+    .prodaja-vozila-box {
+        width: 70%;
+    }
+
+    .prodaja-vozila-renault {
+        margin: 0 auto;
+    }
+
+    .prodaja-vozila-dacia {
+        margin: 0 auto;
+    }
+
+    .prodaja-vozila-nissan {
+        margin-left: 0px;
+    }
+
+    #popusti-ponude-wrap {
+        height: 360px;
+    }
+
+    .jb-slika {
+        display: none;
+    }
+
+    .jb-tekst {
+        padding: 0 5px !important;
+    }
+
+    #vozila .black .vozila-h a {
+        background: #171717;
+    }
+
+    .model-img {
+        padding-right: 0px;
+    }
+
+    .model-content {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    #footer {
+        position: relative;
+        height: auto;
+    }
+
+    #footer>.container>div,
+    footer .container>div {
+        text-align: center;
+    }
+
+    #footer .container>div {
+        line-height: 35px;
+        font-size: 16px;
+        min-height: 35px;
+        border: none;
+    }
+
+    .f-social {
+        text-align: center;
+    }
+
+    .social {
+        display: inline-block;
+    }
+
+    #footer>.container>.clear {
+        height: 50px;
+    }
+
+    .opening-hours {
+        bottom: 0px;
+        width: 100%;
+        background-color: #171717;
+    }
+
+    .oh-head {
+        float: right;
+        border: 0;
+    }
+
+    .oh-content {
+        left: auto;
+        right: 0;
+    }
+
+    footer .design a,
+    footer .copyright {
+        text-align: center;
+    }
+
+    [data-carousel-name] {
+        width: 250px !important;
+    }
+
+    [data-carousel-control="wrapper"] {
+        max-width: 250px !important;
+    }
+
+    [data-carousel-control="left"] {
+        top: 30% !important;
+        opacity: 1 !important;
+        left: 5px !important;
+        text-indent: -99999px !important;
+    }
+
+    [data-carousel-control="right"] {
+        top: 30% !important;
+        opacity: 1 !important;
+        right: 5px !important;
+        text-indent: -99999px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 750px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    /* #header { max-height:118px; } */
+    header nav li a {
+        padding: 0 3px;
+        font-size: 13px;
+    }
+
+    .search {
+        right: 5px;
+    }
+
+    .search .search-content {
+        right: 56px;
+    }
+
+    .search .search-content.active {
+        width: 690px;
+    }
+
+    .search input {
+        line-height: 45px;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    #content-slider-1 .blockHeadline,
+    #content-slider-1 .slider-txt,
+    #content-slider-1 .rsTmb span {
+        display: none !important;
+    }
+
+    #content-slider-1 .infoBlock {
+        width: 130px;
+        height: 40px;
+        background-color: #171717;
+        text-align: center;
+        position: absolute;
+        bottom: 50px;
+        top: auto;
+        left: auto;
+        right: 50%;
+        margin-right: -350px;
+        margin-left: inherit;
+    }
+
+    .slider-bg {
+        height: 35px;
+    }
+
+    #content-slider-1 .rsNavItem {
+        height: 35px;
+    }
+
+    #content-slider-1 .rsTmb {
+        font-size: 16px !important;
+        line-height: 35px;
+        padding: 0 10px 0 10px;
+        background: none;
+    }
+
+    #content-slider-1 .rsNavItem.rsNavSelected .rsTmb,
+    #content-slider-1 .rsTmb:hover {
+        color: #171717 !important;
+    }
+
+    .prodaja-vozila-box {
+        width: 370px;
+    }
+
+    .prodaja-vozila-nissan {
+        margin-top: 7px;
+        margin-left: 0px;
+    }
+
+    .prodaja-vozila-dacia {
+        margin-left: 7px;
+    }
+
+    .clear-md {
+        clear: both;
+    }
+
+    #vozila .black .vozila-h a {
+        background: url(/images/hit-auto-strelica-padajuci-meni.png) right 5px top 4px no-repeat;
+    }
+
+    .model-img {
+        padding-right: 0px;
+    }
+
+    .model-content {
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    #popusti-ponude-wrap {
+        height: 340px;
+    }
+
+    #footer {
+        position: relative;
+        height: auto;
+    }
+
+    #footer .container>div {
+        line-height: 35px;
+        font-size: 16px;
+        height: 35px;
+        border-left: 0px;
+    }
+
+    .f-social {
+        height: 50px;
+    }
+
+    [data-carousel-control="wrapper"] {
+        max-width: 506px !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .search {
+        right: -8px;
+    }
+
+    .container {
+        /* width: 1190px; */
+        width: 1230px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    #header {
+        max-height: 120px;
+    }
+
+    header nav li a {
+        padding: 0 18px;
+    }
+
+    .search .search-content.active {
+        width: 968px;
+    }
+
+    .search input {
+        line-height: 31px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    footer {
+        padding-bottom: 60px;
+        padding-top: 65px;
+        /* background-color: #555; */
+        background-color: #171717;
+        color: #fff !important;
+    }
+
+    #footer .container>div {
+        line-height: 50px;
+        font-size: 16px;
+        color: #fff !important;
+    }
+
+    .f-registracija {
+        width: 305px;
+    }
+
+    .f-lokacija {
+        width: 190px;
+    }
+
+    .f-voznja {
+        width: 170px;
+    }
+
+    .f-chat {
+        width: 215px;
+    }
+
+    #chat_wrapper {
+        right: auto;
+        left: 50%;
+        margin-left: 71px;
+    }
+}
+
+#chat_header {
+    height: 49px !important;
+    border-radius: 0px !important;
+    background-color: #FFCB04 !important;
+    color: #171717 !important;
+    padding: 0 0 0 46px !important;
+    font-size: 16px !important;
+    background: #FFCB04 url(/images/hit-auto-ikonice-btn-new.png) -124px 2px no-repeat !important;
+    width: 214px !important;
+    line-height: 49px !important;
+    transition: .5s ease-in;
+}
+
+#chat_header:hover {
+    letter-spacing: 0.5px;
+}
+
+#chat_header span.pull_left {
+    background-color: #FFCB04;
+}
+
+#chat_wrapper select,
+#chat_wrapper textarea,
+#chat_wrapper input[type="text"],
+#chat_wrapper .btn_default {
+    border-radius: 0px !important;
+}
+
+#chat_wrapper select,
+#chat_wrapper input[type="text"] {
+    height: 26px !important;
+}
+
+#main_body {
+    width: 99%;
+}
+
+ul#modeli-slider li {
+    float: left;
+}
+
+ul#modeli-slider li:3n+1 {
+    clear: both;
+}
+
+
+/*Responsieve -ispravka*/
+
+@media (min-width:768px) {
+    .text-onama-void {
+        display: none;
+    }
+
+    .fiksni {
+        position: fixed !important;
+        padding: 6px 5px;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        /* background: #fff; */
+        /* background: #c41230; */
+        background-image: linear-gradient(#da939f, #c41230);
+        padding-left: 75px;
+        -ms-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0, 3);
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .fiksni .mobil-search {
+        display: block;
+        right: 12px;
+        bottom: 10px;
+    }
+}
+
+header .container .top-bar {
+    text-align: right;
+    /* padding: 5px; */
+    padding: 0px;
+}
+
+.phone-icon {
+    /* border-right: 1px solid #000 !important; */
+    padding-right: 20px;
+}
+
+.phone-mail {
+    display: none;
+}
+
+header h1 {
+    float: left;
+    padding: 3px 0;
+}
+
+header .icon {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    padding-left: 15px;
+    vertical-align: text-top;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+}
+
+header .icon span.top-info {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    color: #fff;
+}
+
+header .icon span.top-label {
+    display: block;
+    font-size: 11px;
+    color: #fff;
+}
+
+header a img {
+    padding-right: 10px;
+    vertical-align: bottom;
+    filter: invert(1);
+}
+
+.logo-text a {
+    /* background-image: url('/images/hit-auto-logotip.png'); */
+    /* background-image: url('/images/hit-auto-logotip-2019.svg'); */
+    background-image: url('/images/kribzon-logo.png');
+    /* background-position: 0 0; */
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* width: 140px;
+    height: 48px; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+
+.logo-text a:hover {
+    /* opacity: 0.5; */
+    transform: scale(1.2)
+}
+
+.search-mobil-disable {
+    display: block;
+}
+
+.mobil-search {
+    display: none;
+}
+
+.top-bar .logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    transform: none;
+    /* margin-left: 15px; */
+    padding-top: 2px;
+    background: #FFF;
+
+}
+
+.top-bar .logo>div {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width:768px) {
+    .top-bar .logo {
+        display: none !important;
+    }
+
+    /* #header {
+        height: 163px;
+    } */
+
+    .unutrasnji {
+        display: none !important;
+    }
+
+    .fiksiran {
+        position: fixed !important;
+        padding: 13px 5px;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    #header .container {
+        padding: 0;
+    }
+
+    .logo .mobil-logo {
+        width: 33.33%;
+        position: relative;
+        display: inline-block;
+        background-position: center;
+        margin: 0;
+        float: left;
+        border-top: 1px solid #E3E3E3;
+        border-bottom: 1px solid #E3E3E3;
+        background-size: contain;
+        background-color: #c41230;
+    }
+
+    .logo .dacia-logo {
+        /* border-left: 1px solid #E3E3E3; */
+        border-right: 1px solid #E3E3E3;
+        background-color: white;
+    }
+
+    .logo .renault-logo {
+        /* background: url('/images/hyundai-logotip-btn.png') no-repeat; */
+        /* background: url('/images/renault-logotip-btn.png') no-repeat; */
+        background-position: center;
+        border-right: 1px solid #E3E3E3;
+    }
+
+    .logo-text {
+        font-size: 16px;
+        text-align: left;
+        padding: 0;
+        padding-left: 25px;
+        /* padding-top: 5px; */
+        height: 50px;
+        /* display: inline-block; */
+        background-color: #fff;
+    }
+
+    .fiksiran.mobil-fix {
+        background: #FFF;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* .fiksiran.mobil-fix .logo-text a {
+        background-position: 0 -48px;
+    } */
+    /* .fiksiran.mobil-fix .handle:before {
+        border-top: 7px double #FFCB04!important;
+        border-bottom: 2px solid #FFCB04!important;
+    } */
+    .fiksiran.mobil-fix .logo {
+        display: none;
+    }
+
+    .fiksiran .phone-mail {
+        display: none !important;
+    }
+
+    #content .title {
+        font-size: 22px;
+    }
+
+    #content .title {
+        font-size: 22px;
+    }
+
+    #content .sub-title {
+        font-size: 16px;
+    }
+
+    #content .sub-title {
+        font-size: 17px;
+    }
+
+    #vozila .black i {
+        display: none;
+    }
+
+    .mobil-search {
+        display: block;
+        position: relative !important;
+        padding-left: 10px;
+        margin-top: 15px;
+    }
+
+    .search-mobil-disable {
+        display: none !important;
+    }
+
+    header .handle {
+        position: absolute;
+        right: 5px;
+        top: 9px;
+        width: 10%;
+    }
+
+    #vozila .container {
+        padding: 0;
+    }
+
+    .renault-voz {
+        border-bottom: 1px solid #fff;
+    }
+
+    #footer>.container>div {
+        text-align: left;
+    }
+
+    .social a {
+        width: 33.33%;
+    }
+
+    .f-social {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #footer .social {
+        width: 100%;
+        position: relative;
+        display: inline-block;
+    }
+
+    .social-box {
+        position: relative;
+        display: inline-block;
+        float: left;
+        width: 33.3%;
+        text-align: center;
+    }
+
+    #footer .social a {
+        background-repeat: no-repeat;
+        display: inline-block;
+    }
+
+    #footer .social a.gp {
+        border: none;
+    }
+
+    .oh-head {
+        float: none;
+        background-repeat: no-repeat;
+        padding-left: 0;
+    }
+
+    .oh-head span {
+        background-image: url(/images/hit-auto-ikonice-btn-new.png);
+        background-position: -146px -39px;
+        background-repeat: no-repeat;
+        position: relative;
+        vertical-align: middle;
+        display: inline-block;
+        height: 43px;
+        width: 55px;
+    }
+
+    .oh-head {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+
+    #chat_header {
+        width: 100% !important;
+    }
+
+    #chat_wrapper {
+        width: 100% !important;
+        position: relative !important;
+        bottom: inherit !important;
+        right: inherit !important;
+    }
+
+    .oh-content {
+        width: 100% !important;
+    }
+
+    .JB_Button_Left_BG,
+    .JB_Button_Left {
+        right: 60px !important;
+        top: 5% !important;
+        left: inherit !important;
+    }
+
+    .JB_Button_Right_BG,
+    .JB_Button_Right {
+        top: 5% !important;
+        right: 5px !important;
+    }
+
+    footer .copyright {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+    }
+
+    footer .design a {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        color: #c41230;
+    }
+
+    footer h5 {
+        font-weight: 300;
+        font-style: normal;
+        font-size: 12px;
+    }
+
+    #content-slider-1 .rsNav {
+        display: block !important;
+        position: relative !important;
+        bottom: inherit !important;
+    }
+
+    .rsMinW .rsTab {
+        display: none !important;
+    }
+
+    .rsMinW .rsTab.rsNavSelected {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    header .container {
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 9px;
+        padding: 8px 3px;
+        text-align: center;
+        float: none;
+    }
+
+    header .conatiner .top-bar .icon {
+        display: none !important;
+    }
+
+    .logo-text a {
+        /* background-image: url(/images/hit-auto-logotip.png); */
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        width: 170px;
+        /* height: 48px; */
+        position: absolute;
+        display: inline-block;
+    }
+
+    .showing {
+        background: #fff;
+    }
+
+    header nav ul li:hover ul {
+        display: none;
+    }
+
+    .phone-mail {
+        display: inline-block;
+        width: 100%;
+        border-top: 1px solid #E3E3E3;
+        margin-bottom: -4px;
+        background-color: #c41230;
+    }
+
+    .logo {
+        padding: 0 !important;
+    }
+
+    .phone-mail a {
+        width: 33.3%;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        padding: 7px 0;
+        float: left;
+    }
+
+    .phone-mail a img {
+        padding-right: 0;
+    }
+
+    .phone-mail span {
+        display: block;
+        margin-top: 5px;
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .phone-mail a:last-child {
+        border-left: 1px solid #E3E3E3;
+        float: right;
+    }
+
+    .f-chat {
+        display: none !important;
+    }
+
+    .f-registracija,
+    .f-voznja,
+    .f-lokacija {
+        border-bottom: 1px solid #000 !important;
+    }
+
+    header .container .top-bar {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        text-align: center !important;
+        float: none;
+    }
+
+    .phone-icon,
+    .mail-icon {
+        display: none !important;
+    }
+
+    .social-box a {
+        display: inline-block !important;
+        float: none !important;
+    }
+
+    .onama-text {
+        position: relative;
+        display: inline-block;
+        max-height: 185px;
+        overflow: hidden;
+    }
+
+    .text-onama-void {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: red;
+        border-radius: 30px;
+        font-size: 22px;
+        color: white;
+        text-align: center;
+    }
+
+    .clickme {
+        float: left;
+        cursor: pointer;
+        border-right: 1px solid #E3E3E3;
+    }
+
+    .clickme+a {
+        border-right: 1px solid #E3E3E3;
+    }
+
+    .toggletag {
+        display: none;
+    }
+
+    .slider-model-link a {
+        width: 100% !important;
+    }
+
+    .open {
+        display: block;
+        float: left;
+        position: absolute;
+        /* background: #FFCB04; */
+        background: rgb(1, 18, 168);
+        width: 33.3%;
+        height: 57px;
+        padding-top: 15px;
+        z-index: 999;
+        color: white;
+        text-align: center;
+    }
+
+    #btn {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: #FFCB04;
+        display: none;
+    }
+
+    #btn.clicked {
+        background: red;
+    }
+
+    .content {
+        position: relative;
+        display: inline-block;
+        max-height: 234px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .content.active {
+        max-height: 1450px;
+    }
+
+    h1,
+    p {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+@media (min-width:691px) {
+    header h1 {
+        padding-top: 11px;
+    }
+}
+
+@media (min-width:768px) and (max-width:850px) {
+    header .container {
+        width: 100%;
+    }
+
+    header nav li a {
+        padding: 0 4px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:850px) and (max-width:950px) {
+    header .container {
+        width: 98%;
+    }
+
+    header nav li a {
+        padding: 0 5px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width:950px) and (max-width:1050px) {
+    header .container {
+        width: 98%;
+    }
+
+    header nav li a {
+        padding: 0 8px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width:1050px) and (max-width:1150px) {
+    header .container {
+        width: 98%;
+    }
+
+    header nav li a {
+        padding: 0 8px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width:1150px) and (max-width:1200px) {
+    header .container {
+        width: 98%;
+    }
+
+    header nav li a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:450px) {
+    ul#modeli-slider li {
+        width: 100% !important;
+        height: 100% !important;
+        margin: auto !important;
+        float: none !important;
+        padding: 10px 0 !important;
+        padding-right: 0px !important;
+    }
+}
+
+@media (min-width:450px) and (max-width:768px) {
+    ul#modeli-slider li {
+        width: 70% !important;
+        height: 100% !important;
+        margin: auto !important;
+        float: none !important;
+        padding: 10px 0 !important;
+        padding-right: 0px !important;
+    }
+}
+
+.log-box {
+    padding: 40px 0;
+}
+
+.log-in-col {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.log-in-col input {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.log-in-col button {
+    background-color: #FFCB04;
+    color: #171717;
+    text-decoration: none;
+    font-family: 'RenaultLife-Bold';
+    font-weight: normal;
+    display: inline-block;
+    font-family: 'RenaultLife';
+    font-size: 15px;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+    padding: 0 50px !important;
+    text-transform: uppercase;
+}
+
+.log-in-col button:hover {
+    background-color: #171717;
+    color: #FFCB04;
+}
+
+.log-in-col span {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    padding-left: 20px;
+}
+
+.log-in-col form {
+    margin-top: 20px;
+}
+
+input:focus,
+input:active {
+    outline: 0;
+    outline-color: transparent;
+}
+
+.button-center {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .log-box {
+        display: inline-block !important;
+        padding: 10px;
+    }
+
+    .log-in-col {
+        width: 100%;
+        display: inline-block;
+    }
+
+    #zakazite-modal,
+    #servis-modal,
+    #registracija-modal {
+        width: 100% !important;
+        left: inherit !important;
+        margin: 0 !important;
+        padding: 5px !important;
+    }
+}
+
+.log-footer {
+    padding: 0;
+}
+
+.lean-overlay {
+    /* z-index: auto!important; */
+}
+
+.modal-body iframe {
+    /* height: 450px!important; */
+    max-height: 60vh !important;
+}
+
+.embed #main_body {
+    padding: 5px;
+}
+
+
+/* NOVI BLOKOVI ZA PROMOTIVNE PONUDE u inc-popusti-ponude umesto slidera*/
+
+.ponuda {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0 40px;
+}
+
+.ponuda div {
+    text-align: center;
+}
+
+.ponuda .img-responsive {
+    /* width: 100%; */
+    /* background-position: center; */
+    width: 50%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    transition: all ease-in .5s;
+}
+
+.ponuda .img-responsive:hover {
+    width: 60%;
+}
+
+.ponuda .tekst-blok p strong {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.ponuda .tekst-blok ul {
+    list-style: disc outside none;
+    padding: 5px 0 10px 20px;
+}
+
+.ponuda .tekst-blok ul li {
+    margin-bottom: 2px;
+}
+
+@media(min-width:768px) {
+    .ponuda .tekst-blok {
+        padding-left: 30px;
+    }
+}
+
+
+/* ===============login============== */
+
+#Login {
+    padding: 30px 0px 10px 0px
+}
+
+@media(max-width:768px) {
+    #Login {
+        padding: 10px
+    }
+
+    #Login .mainWrap form>ul.form>li>input {
+        min-height: 30px !important
+    }
+}
+
+#Login h2 {
+    color: #06428d;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0 0 10px 0
+}
+
+#Login input.error {
+    color: #000
+}
+
+#Login .mainWrap {
+    background: url(https://images.usapimg.com/sites/usap-mycart/design/login-bg.jpg) no-repeat top right;
+    border: 1px solid #ccc;
+    padding: 10px 15px 5px 15px;
+    width: 100%
+}
+
+#Login .copy1 {
+    color: #333;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0 0 5px 0
+}
+
+/* .copy1 {
+    color: #333;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    margin: 0 0 5px 0;
+    padding-bottom: 30px;
+} */
+.desni {
+    color: #333;
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    /* margin: 0 0 5px 153px !important; */
+    padding-bottom: 26px;
+
+}
+
+#Login .mainWrap .alert {
+    padding: 6px 10px 6px 35px;
+    background: url(https://images.usapimg.com/sites/usap-mycart/design/myaccount/warning.gif) no-repeat left #f4e6e6;
+    border: 1px solid #d7a6a6;
+    border-radius: 0;
+    font-size: 11px;
+    line-height: 14px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px
+}
+
+#Login .copy2 {
+    color: #666;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px
+}
+
+#Login .mainWrap>.title1 {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold
+}
+
+#Login .mainWrap form>ul {
+    list-style: none
+}
+
+#Login .mainWrap form>ul.form>li {
+    margin-bottom: 10px
+}
+
+#Login .mainWrap form>ul.form>li>label {
+    color: gray;
+    font-size: 11px;
+    font-weight: bold;
+    display: block
+}
+
+#Login .mainWrap form>ul.form>li>input {
+    border: 1px solid #CCC;
+    border-radius: 0;
+    font-size: 12px;
+    min-height: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 4px
+}
+
+#Login .mainWrap form>ul.form>li>input:hover,
+#Login .mainWrap form>ul.form>li>input:focus {
+    border: 1px solid #888
+}
+
+#Login .mainWrap form>.loginBtn {
+    /* background: url(https://images.usapimg.com/sites/usap-mycart/design/myaccount/login-my-ac.jpg) no-repeat scroll 0 0 transparent; */
+    background-image: linear-gradient(#c41230, #7c071b);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    height: 21px;
+    width: 69px;
+    margin: 10px 0;
+    text-indent: -9999px
+}
+
+#Login .mainWrap form .submitBtn {
+    /* background: url(https://images.usapimg.com/sites/usap-mycart/design/myaccount/submit-email.jpg) no-repeat scroll 0 0 transparent; */
+    background-image: linear-gradient(#c41230, #7c071b);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    height: 21px;
+    width: 75px;
+    margin: 10px 0;
+    text-indent: -9999px
+}
+
+.submitBtn {
+    background: url(https://images.usapimg.com/sites/usap-mycart/design/myaccount/submit-email.jpg) no-repeat scroll 0 0 transparent;
+    border: 0;
+    cursor: pointer;
+    height: 21px;
+    width: 75px;
+    margin: 10px 0;
+    text-indent: -9999px
+}
+
+#Login .widgetMid .title2 {
+    color: #000;
+    display: block;
+    font-weight: bold
+}
+
+#Login .mainWrap .resetPwd {
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-decoration: underline
+}
+
+#Login .mainWrap .copy3 {
+    display: block;
+    font-size: 11px;
+    line-height: 15px;
+    margin-top: 7px;
+    margin-bottom: 10px
+}
+
+#Login form {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    margin-bottom: 10px
+}
+
+#Login .email_stat_message {
+    color: #c50e2a;
+    font-size: 12px;
+    border: 0
+}
+
+#Login .suggested-email {
+    cursor: pointer
+}
+
+/* .prvana__lica {
+    padding-top: 30px;
+    text-align: center;
+} */
+
+.registracija span {
+
+    color: #333;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 10px;
+    /* margin: 0 0 10px 0 */
+
+}
+
+.registracija {
+    /* background-color: red; */
+    transform: translateX(-50%);
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media(max-width: 767px) {
+    .registracija {
+        /* background-color: red; */
+        transform: translateX(0%);
+
+    }
+}
+
+.registracija a {
+    border: 0;
+    /* background-image: linear-gradient(#c53f55, #7c071b); */
+    background-image: linear-gradient(#fdb7c3, #7c071b);
+
+    color: #fff;
+    cursor: pointer;
+    width: 75px;
+    font-size: 15px;
+    /* vertical-align: middle; */
+    /* margin: 10px 0 !important; */
+    padding: 5px 10px !important;
+    padding-bottom: 9px !important;
+    /* border-radius: 5px; */
+}
+
+.registracija a:hover {
+    background-image: linear-gradient(#7c071b, #fcd2d9);
+    border-radius: 5px;
+
+}
+
+.btn {
+    border: 0;
+    /* background-color: #c41230; */
+    /* background-image: linear-gradient(red, yellow); */
+    /* background-image: linear-gradient(#c53f55, #7c071b); */
+    background-image: linear-gradient(#fdb7c3, #7c071b);
+
+    color: #fff;
+    cursor: pointer;
+    height: 21px;
+    width: 75px;
+    margin: 10px 0 !important;
+    /* border-radius: 5px; */
+    display: block;
+    text-align: center;
+}
+
+.btn:hover {
+
+    background-image: linear-gradient(#7c071b, #fcd2d9);
+    border-radius: 5px;
+
+}
+
+/* pred footrer */
+
+#FooterShipping {
+    /* background: #555 */
+    background: #171717;
+}
+
+#FooterShipping #shipFooter {
+    height: 40px;
+    text-align: center
+}
+
+#FooterShipping #shipFooter ul {
+    padding: 0
+}
+
+#FooterShipping #shipFooter ul li {
+    color: #fff;
+    font-weight: normal;
+    text-align: center;
+    display: inline;
+    font-size: 14px;
+    list-style: none;
+    padding: 10px 10px
+}
+
+#FooterShipping #shipFooter li em {
+    margin-right: 15px
+}
+
+#FooterShipping #shipFooter ul li:nth-child(2) {
+    border-right: 1px solid #888;
+    border-left: 1px solid #888
+}
+
+@media(min-width:983px) and (max-width:1022px) {
+    #FooterShipping #shipFooter ul li {
+        font-size: 13px
+    }
+}
+
+@media(min-width:768px) and (max-width:982px) {
+    #FooterShipping #shipFooter h4 {
+        font-size: 12px
+    }
+
+    #FooterShipping #shipFooter li em {
+        margin-right: 5px;
+        font-size: 13px
+    }
+
+    #FooterShipping #shipFooter ul li {
+        line-height: 15px;
+        height: 51px
+    }
+}
+
+
+#shipFooter>ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.onama-text {
+    background: url("/images/slider/484356.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .8;
+    height: 400px;
+    position: relative;
+}
+
+@media(max-width: 767px) {
+    .onama-text {
+        height: 0px;
+    }
+
+    #FooterShipping #shipFooter ul li {
+
+        padding: 0
+    }
+}
+
+.text__holder {
+    background-color: #000;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    opacity: .7;
+    color: #fff;
+    text-align: justify;
+    padding: 10px 50px;
+    line-height: 1.5
+}
+
+/* #content>div>div.col-lg-12.col-md-12.col-sm-12.content-text>div>div>p:nth-child(1) {
+    opacity: 1 !important;
+    color: black;
+} */
+#Login>div>h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+#header>div>nav>ul>li>h2 {
+    width: 154.56px;
+}
+
+/* #header>div>nav>ul>li>h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background-image: linear-gradient(red, yellow);
+    opacity: 0.1;
+} */
+
+#header>div>nav>ul>li>h2:hover ::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 51px;
+    /* background-image: linear-gradient(rgb(10, 10, 10), rgb(255, 255, 251)); */
+    background: #fff;
+    opacity: .4;
+    animation: line .2s ease-in;
+
+}
+
+@keyframes line {
+    0% {
+        transform: translateX(0px)
+    }
+
+
+
+    100% {
+        transform: translateX(144.56px)
+    }
+}
+
+#header>div>nav>ul>li>h2:hover ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 51px;
+    /* background-image: linear-gradient(rgb(10, 10, 10), rgb(255, 255, 251)); */
+    background: #fff;
+    opacity: .4;
+    animation: line .2s ease-in;
+    animation-delay: .08s;
+
+}
+
+@keyframes line2 {
+    0% {
+        transform: translateX(0px)
+    }
+
+
+
+    100% {
+        transform: translateX(144.56px)
+    }
+}
+
+
+img.rsImg {
+    /* max-width: none; */
+    opacity: .3
+}
+
+
+
+/* =================strelice-=============== */
+/* #content-slider-1 > div.rsArrow.rsArrowLeft.rsHidden */
+/* #content-slider-1>div.rsArrow.rsArrowLeft.rsHidden>::before { */
+#content-slider-1 .rsArrowLeft:hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    animation: strela .2s ease-in;
+    position: absolute;
+    left: 0px;
+}
+
+#content-slider-1 .rsArrowLeft:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    animation-delay: .38s;
+    /* animation-direction: reverse; */
+    animation: strela2 .2s ease-in .08s;
+    position: absolute;
+    left: 0px;
+    /* animation: strela2 duration timing-function delay iteration-count direction fill-mode; */
+}
+
+#content-slider-1 .rsArrowRight:hover::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    animation: strela .2s ease-in;
+    position: absolute;
+    left: 0px;
+}
+
+#content-slider-1 .rsArrowRight:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    animation-delay: .38s;
+    /* animation-direction: reverse; */
+    animation: strela2 .2s ease-in .08s;
+    position: absolute;
+    left: 0px;
+}
+
+@keyframes strela {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+
+    }
+
+    50% {
+        transform: translateY(70px);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 0;
+        width: 1%;
+        position: absolute;
+        left: 35px;
+    }
+}
+
+@keyframes strela2 {
+    0% {
+        transform: translateY(70px);
+        opacity: 0;
+
+    }
+
+    50% {
+        transform: translateY(70px);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 0;
+        width: 1%;
+        position: absolute;
+        left: 35px;
+    }
+}
+
+#open-maps-modal>span {
+    background: url(/images/new/pin.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#open-maps-modal:hover span {
+    filter: invert(1)
+}
+
+/* #header>div>nav>ul {
+    tra
+} */
+/* .search__3 span {
+    background-color: green;
+    width: 60px;
+    height: 60px;
+    background: url(/images/new/b2b-icon-29.jpg)
+} */
+body>header>div.white__space>div.search__3>span img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-in-out;
+}
+
+body>header>div.white__space>div.search__3>span img:hover {
+    transform: scale(1.2)
+}
+
+.ponuda-carousel {
+    background-color: #f1f1f1;
+}
+
+.cards {
+    height: 50px;
+    /* background: #171717; */
+    background: #c41230;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cards ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.cards ul li {
+    display: inline;
+}
+
+.cards ul li a {
+    margin-right: 30px;
+}
+
+.cards>ul>li:nth-child(1)>a {
+    /* margin-right: 100px; */
+    /* filter: invert(1); */
+}
+
+.cards ul li a img {
+    width: 70px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.cards>ul>li:nth-child(1)>a {
+    overflow: hidden;
+    animation: premium-2 2.5s infinite;
+    animation-delay: .6s;
+}
+
+.cards>ul>li:nth-child(1)>a:after {
+    content: "";
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    -webkit-filter: blur(14px);
+    filter: blur(14px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 15px;
+    background-color: hsla(0, 0%, 100%, .5);
+    -webkit-animation: premium-1 2.5s infinite;
+    animation: premium-1 2.5s infinite;
+    -webkit-animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+    animation-timing-function: cubic-bezier(.4, 0, .2, 1);
+    -webkit-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+@-webkit-keyframes premium-1 {
+    0% {
+        left: -50%
+    }
+
+    to {
+        left: 150%
+    }
+}
+
+@keyframes premium-1 {
+    0% {
+        left: -50%
+    }
+
+    to {
+        left: 150%
+    }
+}
+
+/* @-webkit-keyframes premium-2 {
+    0% {
+        color: #999
+    }
+
+    50% {
+        color: #fff
+    }
+
+    to {
+        color: #999
+    }
+}
+
+@keyframes premium-2 {
+    0% {
+        color: #999
+            color: #c50e2a;
+    }
+
+    50% {
+        color: #fff
+    }
+
+    to {
+        color: #999
+    }
+} */
+#login {
+    background-color: #204782 !important;
+}
