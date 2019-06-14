@@ -3765,6 +3765,10 @@ input:active {
     .cards ul li a {
         margin-right: 0px !important;
     }
+
+    body>div.container>div.container.ponuda-carousel>div.title>h3 {
+        font-size: 60%;
+    }
 }
 
 
@@ -4120,13 +4124,12 @@ input:active {
     }
 
     #FooterShipping #shipFooter ul li {
-
         padding: 0
     }
 
-    /* #FooterShipping #shipFooter {
-        height: 55px;
-    } */
+    .ponuda .img-responsive {
+        width: 100%;
+    }
 }
 
 .text__holder {
